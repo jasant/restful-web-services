@@ -14,8 +14,8 @@ public class UserDAOService {
 	
 	static {
 		users.add(new User(1, "Ana", new Date()));
-		users.add(new User(1, "Paty", new Date()));
-		users.add(new User(1, "Liam", new Date()));
+		users.add(new User(2, "Paty", new Date()));
+		users.add(new User(3, "Liam", new Date()));
 	}
 	
 	public List<User> findAll() {
