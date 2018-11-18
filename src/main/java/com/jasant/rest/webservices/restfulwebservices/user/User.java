@@ -8,6 +8,17 @@ public class User {
 	private String name;
 	private Date birthDate;
 	
+	protected User() {
+		super();
+	}
+	
+	public User(Integer id, String name, Date birthDate) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.birthDate = birthDate;
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -43,13 +54,6 @@ public class User {
 		builder.append(birthDate);
 		builder.append("]");
 		return builder.toString();
-	}
-	
-	public User(Integer id, String name, Date birthDate) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.birthDate = birthDate;
 	}
 	
 }
